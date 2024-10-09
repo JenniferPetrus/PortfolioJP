@@ -3,6 +3,7 @@
     padding: 90px 25px 150px 25px;
     display: flex;
     flex-direction: column;
+    z-index: 1;
   
     @media (min-width: 1200px) {
       padding: 90px 100px 150px 100px;

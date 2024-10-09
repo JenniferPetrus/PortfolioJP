@@ -1,15 +1,14 @@
- <div class="navbar-section">
-    <a href="#top" class="logo"><div id="top" class="header-name"><h2>Jenn<span class="single-letter">I</span>fer<br><span class="custom-space"></span>Pe<span class="single-letter">T</span>rus</h2>
-    </div></a>
-    
-    <div class="navbar">
-        <a href="#about">{{'about' | translate}}</a>
-        <a href="#skills">{{'skills' | translate}}</a>
-        <a href="#projects">{{'projects' | translate}}</a>
-        <a href="#contact">{{'contact' | translate}}</a>
+<nav>
+    <div class="logo pointer"><a href="#top"><div id="top" class="header-name"><h2>Jenn<span class="single-letter">I</span>fer<br><span class="custom-space"></span>Pe<span class="single-letter">T</span>rus</h2>
+    </div></a></div>
+    <div class="nav-items subtitle">
+        <div><a href="#about">About{{'about' | translate}}</a></div>
+        <div><a href="#skills">Skills{{'skills' | translate}}</a></div>
+        <div><a href="#projects">Portfolio{{'projects' | translate}}</a></div>
+        <div><a href="#contact">Contact{{'contact' | translate}}</a></div>
         <div class="language">
             <p (click)="translate.switchLanguage('de')">DE</p>|
             <p (click)="translate.switchLanguage('en')">EN</p>
         </div>
     </div>
-</div>   
+</nav> 

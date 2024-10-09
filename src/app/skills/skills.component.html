@@ -1,4 +1,35 @@
 <div id="skills">
-
+    <div class="line-skills"></div>
+    <div #skillsSection class="skills-container" data-aos="fade-up" data-aos-duration="1000">
+        
+        <div class="skills-intro" >
+            <h2>My skills</h2>
+            <div>
+                <p>I have acquired valuable skills in frontend development, including proficiency in HTML, CSS, and JavaScript. My experience with frameworks like Angular and Bootstrap allows me to create responsive and user-friendly applications. Committed to continuous learning, I stay updated with the latest technologies to enhance my development capabilities.</p>
+                <h3>Looking for <span class="another-skill">another skill</span>?</h3>
+                <p>Feel free to contact me. I look forward to expanding on my previous knowledge.</p>
+            </div>
+            <div class="btn-container hidemobile">
+                <button class="main-btn"><a href="#contact">Get in touch</a></button>
+              </div>
+        </div>
+        <!-- <div class="skills-icons-container" data-aos="fade-up" data-aos-duration="1000">
+            <div class="skill-item skill-icon" *ngFor="let skill of skills; let i = index" [ngClass]="{'last-icon': i === skills.length - 1}">
+                <img 
+                    [src]="skill.logo" 
+                    [ngClass]="{'white-icon': skill.description.includes('Continually') && skill.logo === '/assets/img/icons/learning.svg'}"
+                    alt="{{ skill.description }}">
+                <div class="skill-description" 
+                     [ngClass]="{'blue': i === skills.length - 1}">
+                    <span [innerHTML]="skill.description"></span>
+                </div>
+                <div *ngIf="i === skills.length - 1" class="tooltip">I have a special <br> interest in learning react and python</div>
+            </div> -->
+        </div>
+        <div class="btn-container hidedesktop">
+            <button class="main-btn"><a href="#contact">Get in touch</a></button>
+          </div>
+          <img class="skills-bg-form" src="/assets/img/bg/blue-shadow-left.png">
+    </div>
     
-</div>
+<!-- </div> -->
