@@ -46,8 +46,9 @@
 
     a{
     text-decoration: none;
+    color: inherit;
     }
-    
+
     &:hover {
       border: 1px solid #4B47FF;
       padding: 20px 40px;
@@ -101,6 +102,11 @@
     align-items: center;
     width: 100%;
     height: 70px;
+
+    a{
+      color: inherit;
+      text-decoration: none;
+    }
   }
   
   h2 {
@@ -253,12 +259,11 @@
     }
   }
   
-  app-section-skills {
+  app-skills {
     position: relative;
   }
   
-  
-  app-section-title {
+  app-title {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -272,15 +277,7 @@
     }
   }
   
-  app-section-icons {
-    @media (min-width: 1200px) {
-      .icon-container {
-        margin-left: 125px;
-      }
-    }
-  }
-  
-  app-section-portfolio {
+  app-projects {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -292,7 +289,7 @@
     }
   }
   
-  app-section-contact {
+  app-contact {
     position: relative;
     padding: 0px 25px;
   
@@ -323,8 +320,6 @@
     background: rgba(20, 29, 47, 0.9);
     z-index: 9;
   }
-  
-  
   
   app-imprint {
     display: flex;

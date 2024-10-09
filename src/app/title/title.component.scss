@@ -1,7 +1,7 @@
 .section-title-container {
     display: flex;
     flex-direction: column;
-    z-index: 0;
+    z-index: 99;
   
     @media (min-width: 1200px) {
       width: 50vw;
