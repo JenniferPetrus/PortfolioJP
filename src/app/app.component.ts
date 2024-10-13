@@ -9,7 +9,6 @@ import { ContactComponent } from "./contact/contact.component";
 import { FooterComponent } from "./footer/footer.component";
 import { ReviewsComponent } from "./reviews/reviews.component";
 import { FormsModule } from '@angular/forms';
-import { BrowserModule } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -24,8 +23,7 @@ import { BrowserModule } from '@angular/platform-browser';
     ContactComponent, 
     FooterComponent, 
     ReviewsComponent, 
-    FormsModule, 
-    BrowserModule],
+    FormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
