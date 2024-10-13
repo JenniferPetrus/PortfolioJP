@@ -22,7 +22,8 @@ import { FormsModule } from '@angular/forms';
     ProjectsComponent, 
     ContactComponent, 
     FooterComponent, 
-    ReviewsComponent, FormsModule],
+    ReviewsComponent, 
+    FormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

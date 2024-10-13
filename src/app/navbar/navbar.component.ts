@@ -13,6 +13,7 @@ import { CommonModule } from '@angular/common';
 })
 export class NavbarComponent {
   translate = inject(TranslationService);
+
   imprintService = inject(ImprintService);
   
   isMobileMenuOpen: boolean = false;
@@ -35,7 +36,6 @@ export class NavbarComponent {
       });
     }
 
-    // Close the imprint if it's open
     this.imprintService.closeImprint();
   }
 
