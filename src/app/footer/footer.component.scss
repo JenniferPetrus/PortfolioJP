@@ -38,11 +38,19 @@
   
   .icon-ctn {
     display: flex;
-    justify-content: flex-end;
+    align-items: center; 
   }
   
+  .icon-ctn img {
+    margin-left: 20px; 
+    width: 30px; 
+    height: auto;
+    cursor: pointer;
+  }
+
   .header-name{
     font-size: 30px;
+    cursor: pointer;
   }
   
   .single-letter{
@@ -56,4 +64,40 @@
   
   h2{
     font-size: 26px;
+  }
+  
+  .imprint-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start; 
+    position: fixed;
+    padding-top: 50px;
+    top: 100px;
+    left: -110%;
+    width: 100%;
+    height: 100%;
+    background-color: #141d2f;
+    color: white;
+    z-index: 999;
+    transition: left 0.3s ease-in-out;
+  }
+  
+  .imprint-container.open {
+    left: 0;
+  }
+
+  .imprint-top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  #close-imprint {
+    cursor: pointer;
+    color: white;
+    padding-right: 150px;
+  }
+  #imprint{
+    padding-left: 50px;
   }

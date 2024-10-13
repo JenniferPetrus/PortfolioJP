@@ -1,5 +1,71 @@
 {
-    "about": "About",
-    "skills": "Skills",
-    "projects": "Portfolio"
+    "nav-about": "About",
+    "nav-skills": "Skills",
+    "nav-projects": "Portfolio",
+    "nav-reviews": "Reviews",
+    "nav-contact": "Contact",
+    "nav-imprint": "Imprint",
+    
+    "title-i-am": "I am",
+    "title-name": "Jennifer Petrus",
+    "title-job": "FRONTEND DEVELOPER",
+    "title-lets-talk-btn": "Let's talk",
+
+    "aboutme-headline": "About",
+    "aboutme-info1": "I'm a German Front-End Developer based in Bavaria. I'm skilled in crafting responsive web applications and websites using JavaScript and Angular.",
+    "aboutme-info2": "I've created landing pages, versatile web applications and object-oriented jump-and-run games using these advanced technologies. Please take a look at some of my projects on this website.",
+    "aboutme-info3": "Are you seeking a problem solver? Throughout my dynamic career, I gathered a lot of experience in identifying and analyzing issues in complex IT environments.",
+    "aboutme-info4": "Do you look for a team player? During my training, I collaborated on several group projects, leveraging my experience from working on international marketing and IT projects.",
+
+    "skills-headline": "My skills",
+    "skills-info1": "I have acquired valuable skills in frontend development, including proficiency in HTML, CSS, and JavaScript. My experience with frameworks like Angular and Bootstrap allows me to create responsive and user-friendly applications. Committed to continuous learning, I stay updated with the latest technologies to enhance my development capabilities.",
+    "skills-info2": "Looking for ",
+    "skills-info2.1": "another skill",
+    "skills-info3": "Feel free to contact me. I look forward to expanding on my previous knowledge.",
+    "skills-info4": "Get in touch",
+    "skills-info5": "Continually learning",
+    "skills-info6": "I have a special ",
+    "skills-info7": "interest in learning react and python",
+
+    "portfolio-headline": "Portfolio",
+    "portfolio-info1": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+    "portfolio-info2": "Stay tuned — more innovative projects are underway!",
+    "portfolio-project-text1": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+    "portfolio-project-text2": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+    "portfolio-project-text3": "Based on the PokéAPI a simple library that provides and catalogues pokemon information.",
+
+    "reviews-headline": "Reviews",
+    "currentMember": {
+        "ingolf": {
+            "text": "Jenny is an exceptional teammate who works with remarkable efficiency and speed. Her collaborative nature makes working with her a great pleasure, as she consistently delivers high-quality results."
+            },
+        "anna": {
+            "text": "Jenny is an amazing colleague. Her attention to detail and ability to communicate effectively make her an invaluable team member."
+            }
+        },
+    "team-partner": "Team Partner",
+
+    "contact-headline": "Contact",
+    "contact-info1": "Got a problem to solve?",
+    "contact-info2": "Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to your projects with my work.",
+    "contact-info3": "Need a Frontend developer? ",
+    "contact-info4": "Contact me!",
+    "contact-error1": "Write your name",
+    "contact-error2": "Write your email",
+    "contact-error3": "Write a message",
+    "contact-error4": "Agree the policy",
+    "contact-agree": "I agree with ...",
+    "contact-privacy1": "privacy",
+    "contact-privacy2": "privacy",
+    "contact-submit": "Submit",
+    "contact-success": "Success",
+    "contact-input-name": "Name",
+    "contact-input-mail": "Email",
+    "contact-input-message": "Message",
+
+    "imprint": "Imprint",
+    "imprint-close": "Close",
+    "imprint-info": "Information according to German §5 TMG",
+    "imprint-contact": "Contact: ",
+    "imprint-phone": "Phone: "
 }

@@ -1,12 +1,48 @@
-<nav>
-    <div id="top" class="logo pointer"><a href="#top"><div class="header-name"><h2>Jenn<span class="single-letter">I</span>fer<br><span class="custom-space"></span>Pe<span class="single-letter">T</span>rus</h2>
-    </div></a></div>
-    <div class="nav-items subtitle">
-        <div><a href="#about">About{{'about' | translate}}</a></div>
-        <div><a href="#skills">Skills{{'skills' | translate}}</a></div>
-        <div><a href="#projects">Portfolio{{'projects' | translate}}</a></div>
-        <div><a href="#contact">Contact{{'contact' | translate}}</a></div>
-        <div class="german" (click)="translate.switchLanguage('de')">DE</div>
-        <div class="english" (click)="translate.switchLanguage('en')">EN</div>
+<nav class="nav-desktop">
+    <div id="top" class="logo pointer">
+      <a (click)="scrollToTop()">
+        <div class="header-name">
+          <h2>Jenn<span class="single-letter">I</span>fer<br /><span class="custom-space"></span>Pe<span class="single-letter">T</span>rus</h2>
+        </div>
+      </a>
     </div>
-</nav> 
+    <div class="nav-items subtitle">
+      <div (click)="scrollToElement('about')">{{ 'nav-about' | translate }}</div>
+      <div (click)="scrollToElement('skills')">{{ 'nav-skills' | translate }}</div>
+      <div (click)="scrollToElement('projects')">{{ 'nav-projects' | translate }}</div>
+      <div class="german" (click)="translate.switchLanguage('de')">DE</div>
+      <div class="english" (click)="translate.switchLanguage('en')">EN</div>
+    </div>
+  </nav>
+  
+  <div class="sticky-mobile">
+    <div>
+      <div id="top" class="logo pointer">
+        <a (click)="scrollToTop()">
+          <div class="header-name">
+            <h2>Jenn<span class="single-letter">I</span>fer<br /><span class="custom-space"></span>Pe<span class="single-letter">T</span>rus</h2>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div>
+      <img class="mobile-nav-toggle"
+        [src]="isMobileMenuOpen ? '/assets/img/icons/mobilemenu-close-final.png' : '/assets/img/icons/mobile-menu.png'"
+        alt="Toggle Mobile Menu"
+        (click)="toggleMobileMenu()">
+    </div>
+  </div>
+  
+  <nav class="nav-mobile" [ngClass]="{'open': isMobileMenuOpen}">
+    <div class="nav-items subtitle">
+      <div class="german" (click)="translate.switchLanguage('de')">DE</div>
+      <div class="english" (click)="translate.switchLanguage('en')">EN</div>
+      <div (click)="scrollToElement('about'); closeMobileMenu()">{{ 'nav-about' | translate }}</div>
+      <div (click)="scrollToElement('skills'); closeMobileMenu()">{{ 'nav-skills' | translate }}</div>
+      <div (click)="scrollToElement('projects'); closeMobileMenu()">{{ 'nav-projects' | translate }}</div>
+      <div (click)="scrollToElement('reviews'); closeMobileMenu()">{{ 'nav-reviews' | translate }}</div>
+      <div (click)="scrollToElement('contact'); closeMobileMenu()">{{ 'nav-contact' | translate }}</div>
+      <div (click)="scrollToElement('imprint'); closeMobileMenu()">{{ 'nav-imprint' | translate }}</div>
+    </div>
+  </nav>
+  

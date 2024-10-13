@@ -31,6 +31,10 @@
     align-items: center;
     width: 100%;
     gap: 35px; 
+
+    @media (max-width: 1199px) {
+      margin-top: 550px;
+    }
   }
   
   .title-container {
@@ -211,3 +215,26 @@
       margin-bottom: 5vh;
     }
   }
+
+  .icon-ctn {
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    position: relative;
+    left: 50px;
+    padding-left: 0;
+    margin-left: 0; 
+    width: 100%;
+  }
+  
+  .icon-ctn img {
+    margin-left: 20px; 
+    width: 30px; 
+    height: auto;
+    cursor: pointer;
+  }
+  
+  .icon-ctn p {
+    padding-left: 20px;
+  }
+  

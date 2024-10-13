@@ -1,19 +1,73 @@
 <div id="projects">
-    <div class="line-portfolio" data-aos="fade-zoom-in-right"
-data-aos-easing="ease-in"
-data-aos-offset="100"
-data-aos-delay="1000"></div>
-<div #portfolioSection class="portfolio-intro-container" data-aos="fade-up" data-aos-duration="1000">
-    <h2 data-aos="fade-up" data-aos-duration="1000">Portfolio</h2>
+    <div class="line-portfolio"></div>
+<div #portfolioSection class="portfolio-intro-container">
+    <h2>{{ 'portfolio-headline' | translate }}</h2>
     <div>
-      <p>Explore a selection of my work here - Interact with projects to see my skills in action.</p>
-      <p>Stay tuned — more innovative projects are underway!</p>
+      <p>{{ 'portfolio-info1' | translate }}</p>
+      <p>{{ 'portfolio-info2' | translate }}</p>
     </div>
 </div>
 <div class="portfolio-items-container" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1500">
-   <!-- <app-projects *ngFor="let project of projects; let i = index" [project]="project" [index]="i"></app-projects> -->
+  <div class="project">
+    <div class="project-content">
+        <img src="/assets/img/portfolio/Join01.png" alt="JOIN" class="project-image">
+        <div class="project-details details-right">
+            <h3 class="project-title">JOIN</h3>
+            <div class="project-tags">
+                <span class="tag">Angular | TypeScript | HTML | CSS | Firebase</span>
+            </div>
+            <p class="project-description">
+                {{ 'portfolio-project-text1' | translate }}
+            </p>
+            <div class="project-buttons">
+                <a href="https://join-9ps.pages.dev" class="btn btn-live" target="_blank">Live Test</a>
+                <a href="https://github.com/JenniferPetrus/Join" class="btn btn-github" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-content second-project">
+        <div class="project-details details-left">
+            <h3 class="project-title">El Pollo Loco</h3>
+            <div class="project-tags">
+                <span class="tag">Javascript | HTML | CSS</span>
+            </div>
+            <p class="project-description">
+                {{ 'portfolio-project-text2' | translate }}
+            </p>
+            <div class="project-buttons">
+                <a href="https://el-pollo-loco-4r5.pages.dev" class="btn btn-live" target="_blank">Live Test</a>
+                <a href="https://github.com/JenniferPetrus/Projekt12-El-Pollo-Loco" class="btn btn-github" target="_blank">GitHub</a>
+            </div>
+        </div>
+        <div>
+          <img src="/assets/img/portfolio/Pollo-Loco01.png" alt="El Pollo Loco" class="project-image">
+        </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-content">
+        <img src="/assets/img/portfolio/Pokedex01.png" alt="Pokedex" class="project-image">
+        <div class="project-details details-right">
+            <h3 class="project-title">Pokedex</h3>
+            <div class="project-tags">
+                <span class="tag">JavaScript | HTML | CSS | API</span>
+            </div>
+            <p class="project-description">
+                {{ 'portfolio-project-text3' | translate }}
+            </p>
+            <div class="project-buttons">
+                <a href="https://projekt9-pokedex.pages.dev" class="btn btn-live" target="_blank">Live Test</a>
+                <a href="https://github.com/JenniferPetrus/Projekt9-Pokedex" class="btn btn-github" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </div>
+</div>
+
 </div>
 <img class="portfolio-bg-form-top" src="/assets/img/bg/darkblue-shadow-left.png">
 <img class="portfolio-bg-form-bottom" src="/assets/img/bg/blue-shadow-right.png">
-    
 </div>

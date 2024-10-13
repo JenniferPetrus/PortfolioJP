@@ -1,17 +1,56 @@
-<div id="contact" class="line-contact" data-aos="fade-zoom-in-left"
-data-aos-easing="ease-in"
-data-aos-delay="1000"></div>
-<h2 data-aos="fade-up" data-aos-duration="1000">Contact</h2>
-<div #contactSection class="contact-container" data-aos="fade-up" data-aos-duration="1000">
-  <div class="contact-text">
-    <h3>Got a problem to solve?</h3>
-    <p>
-      Contact me through this form, I am interested in hearing you, knowing your
-      ideas and contributing to your projects with my work.
-    </p>
-    <p>Need a Frontend developer? <b>Contact me!</b></p>
+<section id="contact" class="contact-section">
+  <div class="headline-with-stick-wrapper">
+    <div class="headline-with-stick">
+      <h1>{{ 'contact-headline' | translate }}</h1>
+      <div class="long-stick"></div>
+    </div>
   </div>
-  <img class="contact-bg-form" src="/assets/img/bg/darkblue-shadow-bottom.png">
-</div>
-<div class="upbtn" id="top" data-aos="fade-up" data-aos-duration="1000"><div></div></div>
+  <div class="content">
 
+    <div class="leftcontent">
+      <h2>{{ 'contact-info1' | translate }}</h2>
+      <span>{{ 'contact-info2' | translate }}</span>
+      <span>{{ 'contact-info3' | translate }}<b>{{ 'contact-info4' | translate }}</b></span>
+    </div>
+
+    <div data-aos="fade-left" data-aos-duration="2000" class="rightcontent">
+      <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+        <div class="form-group">
+          <input [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="{{ 'contact-input-name' | translate }}" required #name="ngModel" class="form-control" [class]="{'is-invalid': name.invalid && name.touched}">
+          <span *ngIf="!name.valid && name.touched" class="error-message">{{ 'contact-error1' | translate }}</span>
+        </div>
+      
+        <div class="form-group">
+          <input [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="{{ 'contact-input-mail' | translate }}" required #email="ngModel" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" [class]="{'is-invalid': email.invalid && email.touched}">
+          <span *ngIf="!email.valid && email.touched" class="error-message">{{ 'contact-error2' | translate }}</span>
+        </div>
+      
+        <div class="form-group">
+          <textarea #message="ngModel" minlength="8" [(ngModel)]="contactData.message" id="message" name="message" placeholder="{{ 'contact-input-message' | translate }}" required [class]="{'is-invalid': message.invalid && message.touched}"></textarea>
+          <span *ngIf="!message.valid && message.touched" class="error-message">{{ 'contact-error3' | translate }}</span>
+        </div>
+      
+        <div class="privacy-policy form-group">
+          <input type="checkbox" id="privacy" name="privacy" [(ngModel)]="contactData.privacy" required #checkbox="ngModel" [class]="{'is-invalid': checkbox.invalid && checkbox.touched}">
+            <div>{{ 'contact-agree' | translate }}
+              <a [routerLink]="['/privacy']">{{ 'contact-privacy1' | translate }}</a>
+              {{ 'contact-privacy2' | translate }}
+            </div>
+          <label for="privacy"></label>
+          <span *ngIf="!checkbox.valid && checkbox.touched" class="error-message">{{ 'contact-error4' | translate }}</span>
+        </div>
+      
+        <button type="submit" [disabled]="contactForm.invalid" [class.active]="!contactForm.invalid" class="submit-button">{{ 'contact-submit' | translate }}</button>
+      
+        <p *ngIf="isSubmitted" class="success-message">{{ 'contact-success' | translate }}</p>
+      </form>
+
+      <div class="arrow-container">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7.00002 3.828L2.34302 8.485C1.95255 8.87546 1.31948 8.87546 0.929016 8.485C0.53855 8.09453 0.538551 7.46146 0.929016 7.071L7.29291 0.707106C7.68343 0.316581 8.3166 0.316582 8.70712 0.707106L15.071 7.071C15.4615 7.46147 15.4615 8.09453 15.071 8.485C14.6806 8.87547 14.0475 8.87547 13.657 8.485L9.00002 3.828L9.00002 15C9.00002 15.5523 8.5523 16 8.00002 16C7.44773 16 7.00002 15.5523 7.00002 15L7.00002 3.828Z" fill="white"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="shadow"></div>
+</section>

@@ -1,4 +1,71 @@
 {
-    "about": "Über",
-    "skills": "Fähigkeiten"
+    "nav-about": "Über mich",
+    "nav-skills": "Fähigkeiten",
+    "nav-projects": "Portfolio",
+    "nav-reviews": "Bewertungen",
+    "nav-contact": "Kontakt",
+    "nav-imprint": "Impressum",
+    
+    "title-i-am": "Ich bin",
+    "title-name": "Jennifer Petrus",
+    "title-job": "FRONTEND-ENTWICKLERIN",
+    "title-lets-talk-btn": "Lass uns reden",
+
+    "aboutme-headline": "Über mich",
+    "aboutme-info1": "Ich bin eine deutsche Front-End-Entwicklerin mit Sitz in Bayern. Ich bin darin erfahren, responsive Webanwendungen und Webseiten mit JavaScript und Angular zu erstellen.",
+    "aboutme-info2": "Ich habe Landing Pages, vielseitige Webanwendungen und objektorientierte Jump-and-Run-Spiele mit diesen modernen Technologien erstellt. Bitte werfen Sie einen Blick auf einige meiner Projekte auf dieser Website.",
+    "aboutme-info3": "Suchen Sie einen Problemlöser? In meiner dynamischen Karriere habe ich viel Erfahrung darin gesammelt, Probleme in komplexen IT-Umgebungen zu identifizieren und zu analysieren.",
+    "aboutme-info4": "Suchen Sie einen Teamplayer? Während meiner Ausbildung habe ich an mehreren Gruppenprojekten gearbeitet und dabei meine Erfahrungen aus internationalen Marketing- und IT-Projekten genutzt.",
+
+    "skills-headline": "Meine Fähigkeiten",
+    "skills-info1": "Ich habe wertvolle Fähigkeiten in der Frontend-Entwicklung erworben, darunter Kenntnisse in HTML, CSS und JavaScript. Meine Erfahrung mit Frameworks wie Angular und Bootstrap ermöglicht es mir, responsive und benutzerfreundliche Anwendungen zu erstellen. Ich bin bestrebt, kontinuierlich zu lernen und halte mich über die neuesten Technologien auf dem Laufenden, um meine Entwicklungsmöglichkeiten zu erweitern.",
+    "skills-info2": "Suchen Sie nach ",
+    "skills-info2.1": "einer weiteren Fähigkeit",
+    "skills-info3": "Zögern Sie nicht, mich zu kontaktieren. Ich freue mich darauf, mein Wissen zu erweitern.",
+    "skills-info4": "Nehmen Sie Kontakt auf",
+    "skills-info5": "Ständige Weiterbildung",
+    "skills-info6": "Ich habe ein besonderes ",
+    "skills-info7": "Interesse daran, React und Python zu lernen",
+
+    "portfolio-headline": "Portfolio",
+    "portfolio-info1": "Entdecken Sie hier eine Auswahl meiner Arbeiten - Interagieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+    "portfolio-info2": "Bleiben Sie dran — weitere innovative Projekte sind in Arbeit!",
+    "portfolio-project-text1": "Task-Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+    "portfolio-project-text2": "Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Helfen Sie Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen.",
+    "portfolio-project-text3": "Basierend auf der PokéAPI eine einfache Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert.",
+
+    "reviews-headline": "Bewertungen",
+    "currentMember": {
+        "ingolf": {
+            "text": "Jenny ist eine außergewöhnliche Teamkollegin, die mit bemerkenswerter Effizienz und Geschwindigkeit arbeitet. Ihre kooperative Art macht die Zusammenarbeit mit ihr zu einem großen Vergnügen, da sie stets qualitativ hochwertige Ergebnisse liefert."
+        },
+        "anna": {
+            "text": "Jenny ist eine großartige Kollegin. Ihr Auge fürs Detail und ihre Fähigkeit, effektiv zu kommunizieren, machen sie zu einer wertvollen Teammitglied."
+        }
+    },
+    "team-partner": "Teamkollege",
+
+    "contact-headline": "Kontakt",
+    "contact-info1": "Haben Sie ein Problem zu lösen?",
+    "contact-info2": "Kontaktieren Sie mich über dieses Formular. Ich bin daran interessiert, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+    "contact-info3": "Brauchen Sie einen Frontend-Entwickler?",
+    "contact-info4": "Kontaktieren Sie mich!",
+    "contact-error1": "Schreiben Sie Ihren Namen",
+    "contact-error2": "Schreiben Sie Ihre E-Mail",
+    "contact-error3": "Schreiben Sie eine Nachricht",
+    "contact-error4": "Zustimmen zur Datenschutzrichtlinie",
+    "contact-agree": "Ich stimme ... zu",
+    "contact-privacy1": "Datenschutz",
+    "contact-privacy2": "Datenschutz",
+    "contact-submit": "Absenden",
+    "contact-success": "Erfolg",
+    "contact-input-name": "Name",
+    "contact-input-mail": "E-Mail",
+    "contact-input-message": "Nachricht",
+
+    "imprint": "Impressum",
+    "imprint-close": "Schließen",
+    "imprint-info": "Informationen gemäß §5 TMG",
+    "imprint-contact": "Kontakt: ",
+    "imprint-phone": "Telefon: "
 }

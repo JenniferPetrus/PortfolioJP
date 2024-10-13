@@ -1,31 +1,37 @@
 <img class="bg-shape" src="/assets/img/bg/bg1.png" alt="" />
-<div class="fullcontainer"><div class="image-container">
-  <div class="bg-colors-container">
-    <img
-      class="bg-colors"
-      style="margin-left: 3%"
-      src="{{ bgLeft }}"
-    />
-    <img
-      class="bg-colors"
-      style="margin-right: 3%"
-      src="{{ bgRight }}"
-    />
+<div class="fullcontainer">
+  <div class="image-container">
+    <div class="bg-colors-container">
+      <img class="bg-colors" style="margin-left: 3%" src="{{ bgLeft }}" />
+      <img class="bg-colors" style="margin-right: 3%" src="{{ bgRight }}" />
+    </div>
+    <img class="titleimage" src="/assets/img/jennifer-petrus1.png" alt="Jennifer Petrus" />
   </div>
-  <img class="titleimage" src="/assets/img/jennifer-petrus1.png" alt="Jennifer Petrus" />
-</div>
-<div data-aos="fade-up" data-aos-duration="1000" class="section-title-container">
-  <div class="title-btn-container">
-    <div class="title-container">
-      <div class="title-vertical">I am</div>
-      <div class="title-horizontal">
-        <div class="myname">Jennifer Petrus</div>
-        <div class="jobtitle">Frontend Developer</div>
+  <div data-aos="fade-up" data-aos-duration="1000" class="section-title-container">
+    <div class="title-btn-container">
+      <div class="title-container">
+        <div class="title-vertical">{{ 'title-i-am' | translate }}</div>
+        <div class="title-horizontal">
+          <div class="myname">{{ 'title-name' | translate }}</div>
+          <div class="jobtitle">{{ 'title-job' | translate }}</div>
+        </div>
+      </div>
+      <div class="btn-container margin">
+        <button class="main-btn" (click)="scrollToElement('contact')">{{ 'title-lets-talk-btn' | translate }}</button>
       </div>
     </div>
-    <div class="btn-container margin">
-        <a href="#contact"><button class="main-btn">Let's talk</button></a>
-    </div>
   </div>
 </div>
+
+<div class="icon-ctn">
+  <a href="https://github.com/JenniferPetrus" target="_blank">
+    <img src="/assets/img/icons/github.png" alt="Github">
+  </a>
+  <a href="mailto:kontakt@jennifer-petrus.de">
+    <img src="/assets/img/icons/mail.png" alt="Mail">
+  </a>
+  <a href="https://www.linkedin.com/in/jennifer-petrus-5b2b43196/" target="_blank">
+    <img src="/assets/img/icons/linkedin.png" alt="LinkedIn">
+  </a>
+  <p>kontakt&#64;jennifer-petrus.de</p>
 </div>

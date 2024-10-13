@@ -3,7 +3,6 @@
     flex-direction: column;
     align-items: center;
     gap: 35px;
-    margin-bottom: 35px;
   
     h2 {
       line-height: 100%;
@@ -92,4 +91,135 @@
       gap: 8px;
     }
   }
+  }
+
+  .details-right{
+    margin-left: 50px;
+  
+  }
+  .details-left{
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+  }
+.project {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; 
+    justify-content: center;
+    width: 80%;
+
+    &-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    &-image {
+        max-width: 400px; 
+    }
+
+    &-title {
+        color: #9747FF;
+        margin-top: 0;
+    }
+
+    &-tags {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tag {
+        color: #70E61C;
+        margin-right: 10px; 
+    }
+
+    &-description {
+        margin: 1rem 0; 
+    }
+
+    &-buttons {
+        display: flex;
+        gap: 1rem; 
+        a {
+          text-decoration: none; 
+        }
+        .btn {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s; 
+
+            &.btn-live {
+                background-color: #9747FF;
+                color: white;
+
+                &:hover {
+                    background-color: #70E61C;
+                }
+            }
+
+            &.btn-github {
+                background-color: transparent;
+                border: 2px solid #70E61C;
+                color: #70E61C;
+
+                &:hover {
+                    background-color: #70E61C; 
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+  .details-right{
+    margin-left: 0px;
+  
+  }
+  .details-left{
+    margin-right: 0px;
+  }
+  .project {
+    &-content {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-image {
+      width: 100%;
+      max-width: none;
+    }
+
+    &-details {
+      padding-left: 0;
+      text-align: center; 
+    }
+
+    &-description {
+      margin: 1rem 0; 
+      text-align: center; 
+    }
+    
+    &-title {
+      text-align: center; 
+    }
+    
+    &-tags {
+      justify-content: center;
+    }
+    
+    &-buttons {
+      flex-direction: column; 
+      align-items: center;
+      gap: 0.5rem;
+    }
+  }
+  .second-project {
+      flex-direction: column-reverse; 
+    }
   }

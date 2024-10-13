@@ -1,3 +1,7 @@
+#skills{
+  margin-top: 80px;
+}
+
 .skills-container {
     position: relative;
     padding: 0px 25px;
@@ -11,6 +15,9 @@
       flex-direction: row-reverse;
       justify-content: space-between;
       padding: 0px 100px;
+    }
+    @media (max-width: 1200px) {
+      margin-bottom: 100px;
     }
   }
   
@@ -30,6 +37,11 @@
     @media (min-width: 1200px) {
       text-align: center;
       width: 40%;
+    }
+    @media (max-width: 1200px) {
+      text-align: center;
+      justify-content: center;
+      width: 80%;
     }
   }
   
@@ -108,11 +120,11 @@
         transition: opacity 0.3s ease;
         opacity: 1;
       }
-      &.last-icon {
+      &.last-icon:hover {
         animation: none;
     }
       animation: pulse 1.3s infinite;
-      
+
       img {
           filter: brightness(0) invert(1);
       }
@@ -147,7 +159,7 @@
     opacity: 0;
     transition: opacity 0.5s ease, visibility 0.5s ease;
     position: absolute;
-    bottom: 110%;
+    bottom: 130%;
     left: 50%;
     transform: translateX(-50%);
     background-color: #fff;
@@ -170,3 +182,11 @@
   .another-skill{
     color: #9747FF;
   }
+
+.last-icon p {
+  color: #1CDAE6;
+}
+
+.last-icon:hover p {
+  color: white;
+}
