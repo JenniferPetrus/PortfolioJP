@@ -26,6 +26,7 @@
     text-align: center;
     margin: 0;
     white-space: nowrap;
+    margin-bottom: 20px;
   }
 
   .content {
@@ -46,6 +47,11 @@
       justify-content: flex-start;
       padding: 20px;
       color: white;
+        @media (max-width: 1200px) {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
 
       h2 {
         font-size: 32px;
@@ -68,6 +74,9 @@
       padding: 20px;
       background-color: transparent;
       position: relative;
+      @media (max-width:600px) {
+        width: 80%;
+      }
 
       form {
         max-width: 620px;

@@ -36,6 +36,9 @@
     border-radius: 10px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 16px;
+      @media (max-width: 700px) {
+        margin-top: -30px;
+      }
   }
   
   .main-btn {
@@ -233,7 +236,7 @@
     }
     @media (max-width: 650px) {
       top: 100px;
-      width: 20%;
+      width: 10%;
     }
   }
   
@@ -276,7 +279,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 93vh;
+    height: 100vh;
     overflow: hidden;
   
     @media (min-width: 1200px) {
@@ -302,12 +305,13 @@
   
     @media (min-width: 1200px) {
       padding: 0px 100px;
+
     }
-  
+    @media (max-width: 1200px){
+      text-align: center;
+    }
     h2 {
-      padding-left: 25px;
       @media (min-width: 1200px) {
-        padding-left: 100px;
         margin-bottom: 25px;
       }
     }

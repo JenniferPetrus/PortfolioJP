@@ -9,7 +9,7 @@
   <div class="content">
     <div class="leftcontent">
       <h2>{{ 'contact-info1' | translate }}</h2>
-      <span (click)="toggleImprint()">{{ 'contact-info2' | translate }}</span>
+      <span>{{ 'contact-info2' | translate }}</span>
       <span>{{ 'contact-info3' | translate }}<b>{{ 'contact-info4' | translate }}</b></span>
     </div>
 
@@ -33,7 +33,7 @@
         <div class="privacy-policy form-group">
           <input type="checkbox" id="privacy" name="privacy" [(ngModel)]="contactData.privacy" required #checkbox="ngModel" [class]="{'is-invalid': checkbox.invalid && checkbox.touched}">
             <div>{{ 'contact-agree' | translate }}
-              <a [routerLink]="['/imprint']">{{ 'contact-privacy1' | translate }}</a>
+              <a (click)="toggleImprint()" [routerLink]="['/imprint']">{{ 'contact-privacy1' | translate }}</a>
               {{ 'contact-privacy2' | translate }}
             </div>
           <label for="privacy"></label>
