@@ -5,11 +5,14 @@ import { FormsModule, NgForm } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { TranslationService } from '../translation.service';
+import { ImprintService } from '../imprint.service';
+import { Observable } from 'rxjs';
+import { FooterComponent } from '../footer/footer.component';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, CommonModule, TranslateModule, RouterModule],
+  imports: [FormsModule, CommonModule, TranslateModule, RouterModule, FooterComponent],
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
@@ -37,11 +40,22 @@ export class ContactComponent implements OnInit {
       },
     },
   };
+  isImprintVisible$: Observable<boolean>;
 
-  constructor() {}
+  constructor(public imprintService: ImprintService) {
+    this.isImprintVisible$ = this.imprintService.imprintVisible$;
+  }
   ngOnInit(): void {
     throw new Error('Method not implemented.');
   }
+
+  toggleImprint() {
+    this.imprintService.toggleImprint();
+  }
+  // constructor() {}
+  // ngOnInit(): void {
+  //   throw new Error('Method not implemented.');
+  // }
 
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
