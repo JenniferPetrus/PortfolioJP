@@ -30,17 +30,6 @@ export class ContactComponent implements OnInit {
   mailTest = false;
   isSubmitted: boolean = false;
 
-  // post = {
-  //   endPoint: 'https://portfolio.jennifer-petrus.de/sendMail.php',
-  //   body: (payload: any) => JSON.stringify(payload),
-  //   options: {
-  //     headers: {
-  //       'Content-Type': 'text/plain',
-  //       responseType: 'text',
-  //     },
-  //   },
-  // };
-
   isImprintVisible$: Observable<boolean>;
 
   constructor(public imprintService: ImprintService) {
