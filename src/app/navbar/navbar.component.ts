@@ -44,5 +44,6 @@ export class NavbarComponent {
       top: 0,
       behavior: 'smooth',
     });
+    this.imprintService.closeImprint();
   }
 }

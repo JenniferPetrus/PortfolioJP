@@ -59,6 +59,11 @@
       row-gap: 120px;
       column-gap: 54px;
     }
+    @media (max-width: 1200px) {
+      width: calc(100% - 90px);
+      row-gap: 40px;
+      column-gap: 54px;
+    }
   }
   
   .skills-bg-form {
@@ -82,6 +87,9 @@
   
   img {
     height: 60px;
+    @media (max-width: 550px) {
+      height: 30px;
+    }
   }
   
   .skill-icon {
@@ -101,9 +109,13 @@
   
     @media (min-width: 1200px) {
       width: calc(25% - 60px);
-  
     }
-  
+    @media (max-width: 550px) {
+      p{
+        font-size: smaller;
+      }
+    }
+
     &:hover {
       &::after {
         content: '';

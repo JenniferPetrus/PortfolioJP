@@ -74,14 +74,27 @@
     position: fixed;
     padding-top: 50px;
     top: 100px;
-    left: -110%;
+    left: -120%;
     width: 100%;
     height: 100%;
     background-color: #141d2f;
     color: white;
     z-index: 999;
     transition: left 0.3s ease-in-out;
-  }
+
+    @media (max-width: 500px){
+      h3{
+        font-size: 16px;
+        }
+      p{
+        font-size: 12px;
+      }
+      div{
+        font-size: 14px;
+      }
+      }
+    }
+
   
   .imprint-container.open {
     left: 0;
@@ -91,8 +104,25 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    h2{
+      @media (max-width: 500px){
+        font-size: 16px;
+      }
+    }
+    
   }
-  
+  .privacy {
+    font-size: 12px;
+    max-width: 80%;
+    margin-bottom: 200px;
+    background: white;
+    overflow: auto;
+    background-color: transparent;
+    h2{
+      font-size: 16px;
+    }
+  }
+
   #close-imprint {
     cursor: pointer;
     color: white;
