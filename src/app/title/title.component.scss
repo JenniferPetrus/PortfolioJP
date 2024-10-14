@@ -32,7 +32,13 @@
     width: 100%;
     gap: 35px; 
 
-    @media (max-width: 1199px) {
+    @media (min-width: 1199px) {
+      margin-top: 80px;
+    }
+    @media (max-width: 450px) {
+      margin-top: 150px;
+    }
+    @media (min-width: 450px) and (max-width:1199px) {
       margin-top: 550px;
     }
   }
@@ -110,6 +116,12 @@
       font-size: 44px;
     }
   }
+
+  .main-btn{
+    @media (max-width: 700px) {
+      margin-bottom: 20px;
+    }
+  }
   
   .image-container {
     display: flex;
@@ -173,8 +185,7 @@
       }
       @media (max-width: 450px) {
         position: relative;
-        top: 150px;
-        left: 20px;
+        top: 200px;
         width: 100%;
         min-width: 360px;
         max-width: 660px;
