@@ -30,19 +30,16 @@ export class ContactComponent implements OnInit {
   mailTest = false;
   isSubmitted: boolean = false;
 
-  post = {
-    endPoint: 'https://portfolio.jennifer-petrus.de/sendMail.php',
-    body: (payload: any) => JSON.stringify(payload),
-    options: {
-      headers: {
-        'Content-Type': 'text/plain',
-        responseType: 'text',
-      },
-    },
-  };
-
-
-
+  // post = {
+  //   endPoint: 'https://portfolio.jennifer-petrus.de/sendMail.php',
+  //   body: (payload: any) => JSON.stringify(payload),
+  //   options: {
+  //     headers: {
+  //       'Content-Type': 'text/plain',
+  //       responseType: 'text',
+  //     },
+  //   },
+  // };
 
   isImprintVisible$: Observable<boolean>;
 
@@ -56,31 +53,34 @@ export class ContactComponent implements OnInit {
   toggleImprint() {
     this.imprintService.toggleImprint();
   }
-  // constructor() {}
-  // ngOnInit(): void {
-  //   throw new Error('Method not implemented.');
-  // }
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
-      this.http.post(this.post.endPoint, this.post.body(this.contactData))
-        .subscribe({
-          next: (response) => {
-            this.isSubmitted = true;
-            ngForm.resetForm();
-            this.hideSuccessMessageAfterDelay();
-          },
-          error: (error) => {
-            console.error(error);
-          },
-          complete: () => console.info('send post complete'),
-        });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-      this.isSubmitted = true;
-      ngForm.resetForm();
-      this.hideSuccessMessageAfterDelay();
+    if (ngForm.valid) {
+      // Formulardaten formatieren
+      const formData = new URLSearchParams();
+      formData.append('email', this.contactData.email);
+      formData.append('message', this.contactData.message);
+      formData.append('name', this.contactData.name);
+      
+      this.http.post('https://formspree.io/f/manyyovl', formData.toString(), {
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+      })
+      .subscribe({
+        next: (response) => {
+          this.isSubmitted = true;
+          ngForm.resetForm();
+          this.hideSuccessMessageAfterDelay();
+        },
+        error: (error) => {
+          console.error(error);
+        },
+        complete: () => console.info('send post complete'),
+      });
     }
   }
+  
 
   hideSuccessMessageAfterDelay() {
     setTimeout(() => {

@@ -14,7 +14,7 @@
     </div>
 
     <div class="rightcontent">
-      <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+      <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" action="https://formspree.io/f/manyyovl" method="POST">
         <div class="form-group">
           <input [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="{{ 'contact-input-name' | translate }}" required #name="ngModel" class="form-control" [class]="{'is-invalid': name.invalid && name.touched}">
           <span *ngIf="!name.valid && name.touched" class="error-message">{{ 'contact-error1' | translate }}</span>
