@@ -14,7 +14,6 @@ export class TitleComponent implements OnInit {
   bgLeft: string = "/assets/img/bg/intro-blue-shadow.png";
   bgRight: string = "/assets/img/bg/intro-darkblue-shadow.png";
 
-  // Scroll to a specific element
   scrollToElement(elementId: string): void {
     const element = document.getElementById(elementId);
     if (element) {
