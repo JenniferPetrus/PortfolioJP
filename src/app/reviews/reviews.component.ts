@@ -22,7 +22,7 @@ export class ReviewsComponent {
     },
     {
       name: 'Anna Fritz',
-      photo: '',
+      photo: './assets/img/anna.jpg',
       textKey: 'currentMember.anna.text'
     }
   ];
