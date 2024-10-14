@@ -11,6 +11,9 @@
       justify-content: space-between;
       align-items: center;
     }
+    @media (max-width: 1200px) {
+      padding-bottom: 50px;
+    }
   }
   
   .aboutcontainer {
