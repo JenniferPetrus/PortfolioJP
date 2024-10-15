@@ -23,6 +23,9 @@
       align-items: center;
       justify-content: space-around;
     }
+    @media (max-width: 1200px) {
+      margin-top: 200px;
+    }
   }
   
   .title-btn-container {
@@ -175,11 +178,10 @@
       width: 850px;
       @media (min-width: 1200px) {
         position: relative;
-        top: 30px;
+        top: 0px;
         left: 20px;
         width: 100%;
-        min-width: 600px;
-        max-width: 660px;
+        min-width: 650px;
       }
       @media (min-width: 450px) {
         top: 200px;
@@ -188,6 +190,10 @@
       @media (min-width: 320px) {
         top: 150px;
         max-width: 250px;
+      }
+      @media (max-width: 1200px) {
+        margin-top: -20px;
+        min-width: 550px;
       }
     }
   }
@@ -251,6 +257,7 @@
 }
   .icon-ctn {
     display: flex;
+    align-items: center;
     align-items: center;
     z-index: 100;
     position: relative;
