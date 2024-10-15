@@ -13,7 +13,7 @@
       <div class="german" (click)="translate.switchLanguage('de')">DE</div>
       <div class="english" (click)="translate.switchLanguage('en')">EN</div>
     </div>
-  </nav>
+</nav>
   
   <div class="sticky-mobile">
     <div>
@@ -42,7 +42,7 @@
       <div (click)="scrollToElement('projects'); closeMobileMenu()">{{ 'nav-projects' | translate }}</div>
       <div (click)="scrollToElement('reviews'); closeMobileMenu()">{{ 'nav-reviews' | translate }}</div>
       <div (click)="scrollToElement('contact'); closeMobileMenu()">{{ 'nav-contact' | translate }}</div>
-      <div (click)="scrollToElement('imprint'); closeMobileMenu()">{{ 'nav-imprint' | translate }}</div>
+      <div (click)="toggleImprint(); closeMobileMenu()">{{ 'nav-imprint' | translate }}</div>
     </div>
   </nav>
   

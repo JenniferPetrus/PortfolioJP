@@ -4,7 +4,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 30px 100px;
-  width: calc(100% - 200px);
+  max-width: 1440px;
+  width: 100%;
   background-color: #141d2f;
   position: fixed;
   left: 0;
@@ -14,6 +15,11 @@
     color: inherit;
     text-decoration: none;
   }
+}
+
+.nav-desktop{
+  padding-left: calc((100% - 1440px) / 2);
+  padding-right: calc((100% - 1440px) / 2);
 }
 
 .mobile-nav-toggle {
@@ -88,6 +94,9 @@ h2 {
   @media (max-width: 800px) {
     font-size: 30px;
   }
+  @media (max-width: 500px) {
+    font-size: 20px;
+  }
 }
 
 .single-letter {
@@ -135,17 +144,21 @@ h2 {
   }
 
   .logo{
-    padding: 30px 100px;
+    margin: 30px 100px;
     position: fixed;
     a{
       color: inherit;
       text-decoration: none;
     }
     @media (max-width: 800px) {
-      padding: 30px 70px;
       .custom-space {
         display: inline-block;
         width: 34px;
+      }
+    }
+    @media (max-width: 500px) {
+      .custom-space {
+        width: 23px;
       }
     }
   }

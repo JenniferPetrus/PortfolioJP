@@ -1,30 +1,31 @@
-<div id="imprint" class="container hidemobile">
-  <div class="logo hidemobile">
+  <div id="imprint" class="container hidemobile">
+    <div class="logo hidemobile">
+      <div class="header-name" (click)="scrollToTop()">
+        <h2>Jenn<span class="single-letter">I</span>fer<br /><span class="custom-space"></span>Pe<span class="single-letter">T</span>rus</h2>
+      </div>
+    </div>
+    <span class="hidemobile pointer underline" (click)="toggleImprint()">{{ 'imprint' | translate }}</span>
+  </div>
+
+  <div class="logo hidedesktop">
     <div class="header-name" (click)="scrollToTop()">
       <h2>Jenn<span class="single-letter">I</span>fer<br /><span class="custom-space"></span>Pe<span class="single-letter">T</span>rus</h2>
     </div>
   </div>
-  <span class="hidemobile pointer underline" (click)="toggleImprint()">{{ 'imprint' | translate }}</span>
-</div>
 
-<div class="logo hidedesktop">
-  <div class="header-name" (click)="scrollToTop()">
-    <h2>Jenn<span class="single-letter">I</span>fer<br /><span class="custom-space"></span>Pe<span class="single-letter">T</span>rus</h2>
+  <div class="copyright"><span>©</span>Jennifer Petrus 2024</div>
+  <div class="icon-ctn">
+    <a href="https://github.com/JenniferPetrus" target="_blank">
+      <img src="/assets/img/icons/github.png" alt="Github">
+    </a>
+    <a href="mailto:jenny.petrus19@gmail.com">
+      <img src="/assets/img/icons/mail.png" alt="Mail">
+    </a>
+    <a href="https://www.linkedin.com/in/jennifer-petrus-5b2b43196/" target="_blank">
+      <img src="/assets/img/icons/linkedin.png" alt="LinkedIn">
+    </a>
   </div>
-</div>
 
-<div class="copyright"><span>©</span>Jennifer Petrus 2024</div>
-<div class="icon-ctn">
-  <a href="https://github.com/JenniferPetrus" target="_blank">
-    <img src="/assets/img/icons/github.png" alt="Github">
-  </a>
-  <a href="mailto:jenny.petrus19@gmail.com">
-    <img src="/assets/img/icons/mail.png" alt="Mail">
-  </a>
-  <a href="https://www.linkedin.com/in/jennifer-petrus-5b2b43196/" target="_blank">
-    <img src="/assets/img/icons/linkedin.png" alt="LinkedIn">
-  </a>
-</div>
 <div class="hidedesktop pointer underline" (click)="toggleImprint()">{{ 'imprint' | translate }}</div>
 
 <div id="imprint" class="imprint-container" [ngClass]="{'open': (isImprintVisible$ | async)}">

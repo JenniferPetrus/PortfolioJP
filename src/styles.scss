@@ -323,7 +323,7 @@
       @media (min-width: 1200px) {
         margin-bottom: 25px;
       }
-  }
+    }
 }
   
   app-success-message {
@@ -387,7 +387,11 @@
       justify-content: space-between;
     }
   }
-  
+  app-footer{
+    padding-left: calc((100% - 1440px) / 2);
+    padding-right: calc((100% - 1440px) / 2);
+  }
+
   .d-none {
     display: none !important;
     z-index: -5 !important;

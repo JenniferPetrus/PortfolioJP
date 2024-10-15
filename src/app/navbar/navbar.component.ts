@@ -22,6 +22,11 @@ export class NavbarComponent {
     this.isMobileMenuOpen = !this.isMobileMenuOpen;
   }
 
+  toggleImprint() {
+    this.closeMobileMenu();
+    this.imprintService.toggleImprint();
+  }
+
   closeMobileMenu() {
     this.isMobileMenuOpen = false;
   }

@@ -10,6 +10,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 500;
   
     @media (min-width: 1200px) {
       flex-direction: row-reverse;
@@ -103,7 +104,7 @@
     display: flex;
     height: 100px;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
     gap: 10px;
     width: calc(33% - 40px);
@@ -204,4 +205,8 @@
 
 .last-icon:hover p {
   color: white;
+}
+#skills{
+  padding-left: calc((100% - 1440px) / 2);
+  padding-right: calc((100% - 1440px) / 2);
 }
