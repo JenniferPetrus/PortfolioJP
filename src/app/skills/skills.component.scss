@@ -209,7 +209,9 @@
 .last-icon:hover p {
   color: white;
 }
-#skills{
-  padding-left: calc((100% - 1440px) / 2);
-  padding-right: calc((100% - 1440px) / 2);
+#skills {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }

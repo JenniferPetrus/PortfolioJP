@@ -39,10 +39,12 @@
   .icon-ctn {
     display: flex;
     align-items: center; 
+    a{
+      margin-left: 20px; 
+    }
   }
   
   .icon-ctn img {
-    margin-left: 20px; 
     width: 30px; 
     height: auto;
     cursor: pointer;
