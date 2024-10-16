@@ -17,7 +17,7 @@ export class ProjectsComponent {
       mainImage: "/assets/img/portfolio/Join01.png",
       backgroundImage: "/assets/img/portfolio/Join00.png",
       gitLink: 'https://github.com/JenniferPetrus/Join',
-      liveLink: 'https://join-9ps.pages.dev',
+      liveLink: 'https://join-9ps.pages.dev/login',
       title: 'JOIN',
       description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
       tags: ['Javascript', 'HTML', 'CSS']
