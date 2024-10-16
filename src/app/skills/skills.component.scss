@@ -4,7 +4,7 @@
 
 .skills-container {
     position: relative;
-    // padding: 0px 25px;
+    padding: 0px 25px;
     margin-bottom: 150px;
     display: flex;
     flex-direction: column;
@@ -93,6 +93,9 @@
     height: 60px;
     @media (max-width: 550px) {
       height: 30px;
+    }
+    @media (max-width: 400px) {
+      height: 20px;
     }
   }
   
