@@ -221,7 +221,7 @@
   }
   
   .line-skills {
-    width: calc(20px - 8px);
+    width: calc(50px - 8px);
     height: 0px;
     border: 4px solid #4B47FF;
     z-index: 0;
@@ -230,19 +230,11 @@
     right: 0;
   
     @media (min-width: 1200px) {
-      top: 200px;
-      width: 8%;
-    }
-    @media (max-width: 1200px) {
-      top: 100px;
-      width: 70%;
-    }
-    @media (max-width: 585px) {
-      top: 100px;
-      width: 10%;
+      top: 120px;
+      width: 5%;
     }
     @media (max-width: 500px) {
-      top: 90px;
+      top: 10px;
     }
   }
   
@@ -411,7 +403,7 @@
     }
   }
   
-  @media (max-width: 1199px) {
+  @media (max-width: 1200px) {
     .hidemobile {
       display: none;
     }
@@ -421,10 +413,13 @@
     .margin-left {
       margin-left: 125px;
     }
-  
     .hidedesktop {
       display: none !important;
     }
+    .hidemobile {
+      display: block;
+    }
+    
   }
   
   //Animations
