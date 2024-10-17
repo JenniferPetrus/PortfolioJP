@@ -17,7 +17,7 @@ export class ReviewsComponent {
   teamMembers = [
     {
       name: 'Ingolf Stein',
-      photo: './assets/img/anna.jpg',
+      photo: './assets/img/man.jpg',
       textKey: 'currentMember.ingolf.text'
     },
     {
