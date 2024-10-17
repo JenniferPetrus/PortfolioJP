@@ -103,19 +103,33 @@
       margin-right: 0px;
     }
   }
-  
+
   .about-bg-form {
     position: absolute;
-    top: -20px;
+    top: 45vh;
     right: 0;
-    height: 400px;
-    overflow: hidden;
-    z-index: -1;
+    z-index: 1;
+  
+    @media (min-height: 1300px) {
+      top: 35vh;
+    }
+
+    @media (max-height: 720px) {
+      top: 30vh;
+    }
   
     @media (min-width: 1200px) {
-      height: 640px;
-      top: -130px;
-      right: 0px;
+      top: 60%;
+      width: 10%;
     }
-  }
+  
+    @media (min-width: 2700px) {
+      top: 50%;
+      width: 10%;
+    }
+    @media (max-width: 1199px) {
+      .margin {
+        margin-bottom: 5vh;
+      }
+  }}
 
