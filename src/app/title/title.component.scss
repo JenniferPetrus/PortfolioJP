@@ -64,6 +64,7 @@
     height: 50%;
     margin: -6%;
     margin-left: -8%;
+    animation: comesFromRight 2s ease 75ms;
   
     @media (max-width: 389px) {
       font-size: 21px;
@@ -93,6 +94,7 @@
     font-weight: 700;
     color: white;
     line-height: 120%;
+    animation: comesFromRight 1s ease 75ms;
   
     @media (max-width: 389px) {
       font-size: 23px;
@@ -108,6 +110,7 @@
     font-size: 28px;
     color: #4B47FF;
     line-height: 120%;
+    animation: comesFromRight 2s ease 75ms;
   
     @media (max-width: 389px) {
       font-size: 23px;
@@ -288,5 +291,25 @@
   .bg-shape {
     top: 50%;
     width: 100%;
+  }
+}
+@keyframes comesFromRight {
+  0% {
+      transform: translateX(1000px);
+  }
+
+  100% {
+      transform: translateX(0);
+  }
+}
+
+
+@keyframes comesFromBottom {
+  0% {
+      transform: translateY(1000px);
+  }
+
+  100% {
+      transform: translateY(0);
   }
 }

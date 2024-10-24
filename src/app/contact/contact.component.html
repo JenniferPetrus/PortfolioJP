@@ -7,13 +7,17 @@
   </div>
   
   <div class="content">
-    <div class="leftcontent">
+    <div class="leftcontent" data-aos="fade-right"
+    data-aos-offset="800"
+    data-aos-easing="ease-in-sine">
       <p>{{ 'contact-info1' | translate }}</p>
       <span>{{ 'contact-info2' | translate }}</span>
       <span>{{ 'contact-info3' | translate }}<b>{{ 'contact-info4' | translate }}</b></span>
     </div>
 
-    <div class="rightcontent">
+    <div class="rightcontent" data-aos="fade-left"
+    data-aos-offset="800"
+    data-aos-easing="ease-in-sine">
       <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" action="https://formspree.io/f/manyyovl" method="POST">
         <div class="form-group">
           <input [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="{{ 'contact-input-name' | translate }}" required #name="ngModel" class="form-control" [class]="{'is-invalid': name.invalid && name.touched}">

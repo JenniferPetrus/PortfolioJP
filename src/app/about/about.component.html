@@ -1,10 +1,14 @@
 <img class="about-bg-form" src="/assets/img/bg/darkblue-shadow-right.png">
 <div id="about" class="about-section-container">
-    <div class="aboutcontainer">
+    <div class="aboutcontainer" data-aos="fade-right"
+    data-aos-offset="200"
+    data-aos-easing="ease-in-sine">
         <h2>{{ 'aboutme-headline' | translate }}</h2>
         <div>
             <p>{{ 'aboutme-info1' | translate }}</p>
-            <div class="mobileimagecontainer hidedesktop">
+            <div class="mobileimagecontainer hidedesktop" data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine">
                 <img
               class="mobileimage hidedesktop"
               src="/assets/img/jennifer-petrus3.png"
@@ -28,7 +32,9 @@
             <span>{{ 'aboutme-info4' | translate }}</span>
         </div>
     </div>
-    <div class="imagecontainer hidemobile">
+    <div class="imagecontainer hidemobile" data-aos="fade-left"
+    data-aos-offset="200"
+    data-aos-easing="ease-in-sine">
         <div class="line hidemobile"></div>
         <img
       class="aboutimage hidemobile"

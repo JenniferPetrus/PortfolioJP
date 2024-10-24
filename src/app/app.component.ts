@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from "./navbar/navbar.component";
 import { TitleComponent } from "./title/title.component";
@@ -9,6 +9,7 @@ import { ContactComponent } from "./contact/contact.component";
 import { FooterComponent } from "./footer/footer.component";
 import { ReviewsComponent } from "./reviews/reviews.component";
 import { FormsModule } from '@angular/forms';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -27,6 +28,9 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
-  title = 'portfolio';
+export class AppComponent implements OnInit {
+  
+  ngOnInit() {
+    AOS.init(); 
+  }
 }

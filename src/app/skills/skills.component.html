@@ -2,7 +2,9 @@
     <div class="line-skills"></div>
     <div #skillsSection class="skills-container">
         
-        <div class="skills-intro" >
+        <div class="skills-intro" data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine">
             <h2>{{ 'skills-headline' | translate }}</h2>
             <div>
                 <p>{{ 'skills-info1' | translate }}</p>
@@ -13,7 +15,9 @@
                 <button class="main-btn" (click)="scrollToElement('contact')">{{ 'skills-info4' | translate }}</button>
               </div>
         </div>
-        <div class="skills-icons-container">
+        <div class="skills-icons-container" data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine">
             <div class="skill-icon">
                 <img src="/assets/img/icons/angular-big.png" alt="">
                 <p class="skill-description">Angular</p>
