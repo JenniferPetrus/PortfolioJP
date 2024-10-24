@@ -29,14 +29,13 @@ export class ContactComponent implements OnInit {
 
   mailTest = false;
   isSubmitted: boolean = false;
-
   isImprintVisible$: Observable<boolean>;
 
   constructor(public imprintService: ImprintService) {
     this.isImprintVisible$ = this.imprintService.imprintVisible$;
   }
+
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
   }
 
   toggleImprint() {
@@ -45,7 +44,6 @@ export class ContactComponent implements OnInit {
 
   onSubmit(ngForm: NgForm) {
     if (ngForm.valid) {
-      // Formulardaten formatieren
       const formData = new URLSearchParams();
       formData.append('email', this.contactData.email);
       formData.append('message', this.contactData.message);
@@ -69,7 +67,6 @@ export class ContactComponent implements OnInit {
       });
     }
   }
-  
 
   hideSuccessMessageAfterDelay() {
     setTimeout(() => {
@@ -77,18 +74,3 @@ export class ContactComponent implements OnInit {
     }, 5000);
   }
 }
-
-function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  const arrow = document.querySelector('.arrow-container') as HTMLElement;
-
-  if (arrow) {
-    arrow.addEventListener('click', scrollToTop);
-  }
-});

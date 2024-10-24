@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from "./navbar/navbar.component";
 import { TitleComponent } from "./title/title.component";
@@ -9,7 +9,7 @@ import { ContactComponent } from "./contact/contact.component";
 import { FooterComponent } from "./footer/footer.component";
 import { ReviewsComponent } from "./reviews/reviews.component";
 import { FormsModule } from '@angular/forms';
-import * as AOS from 'aos';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -28,9 +28,11 @@ import * as AOS from 'aos';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent implements OnInit {
-  
-  ngOnInit() {
-    AOS.init(); 
+export class AppComponent implements AfterViewInit {
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
+  ngAfterViewInit() {
+    AOS.init();
   }
 }

@@ -1,7 +1,7 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { TranslationService } from '../translation.service';
-import { ImprintService } from '../imprint.service'; // Importiere den ImprintService
+import { ImprintService } from '../imprint.service';
 
 @Component({
   selector: 'app-title',
@@ -12,7 +12,7 @@ import { ImprintService } from '../imprint.service'; // Importiere den ImprintSe
 })
 export class TitleComponent implements OnInit {
   translate = inject(TranslationService);
-  imprintService = inject(ImprintService); // Injektiere den ImprintService
+  imprintService = inject(ImprintService);
   bgLeft: string = "/assets/img/bg/intro-blue-shadow.png";
   bgRight: string = "/assets/img/bg/intro-darkblue-shadow.png";
 
@@ -26,6 +26,13 @@ export class TitleComponent implements OnInit {
         behavior: 'smooth'
       });
     }
+  }
+
+  scrollToTop(): void {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   }
 
   ngOnInit(): void {
