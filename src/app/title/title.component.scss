@@ -42,7 +42,7 @@
     gap: 35px; 
 
     @media (max-width: 1200px) {
-      margin-top: 180px;
+      margin-top: 200px;
     }
     @media (max-width: 400px) {
       margin-top: 150px;
@@ -269,8 +269,7 @@
     width: 90%;
     gap: 20px;
       @media (max-width: 1198px) {
-        top: -22%;
-        position: relative;
+        top: -15%;
         justify-content: center;
       }
       @media (min-width: 1199px) {
