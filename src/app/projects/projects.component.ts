@@ -17,7 +17,7 @@ export class ProjectsComponent {
       mainImage: "/assets/img/portfolio/Join01.png",
       backgroundImage: "/assets/img/portfolio/Join00.png",
       gitLink: 'hhttps://github.com/JenniferPetrus/Join-Firebase',
-      liveLink: 'https://join-9ps.pages.dev/login',
+      liveLink: 'https://join-9ps.pages.dev/html/user-login/log-in',
       title: 'JOIN',
       description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
       tags: ['Javascript', 'HTML', 'CSS']
